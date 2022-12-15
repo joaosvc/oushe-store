@@ -30,7 +30,7 @@
                         <img src="img/favicon.ico" alt="Oushe Store Logo">
                     </div>
                     <div class="title">
-                        <h3>oushe store</h2>
+                        <h3>oushe store</h3>
                     </div>
                 </div>
                 <div class="user">
