@@ -9,7 +9,14 @@ $savePath = $_POST['savePath'] ?? null;
 if ($imageId && $image && $savePath) { 
     $tmp_name = $image['tmp_name'];
     $path = ".$savePath/$imageId";
-    
+
+    foreach (scandir($localPath = ".$savePath") as $file) {
+        $currentPath = "$localPath/$file";
+        if ($file !== "." && $file !== ".." &&
+            pathinfo($file, PATHINFO_FILENAME) == pathinfo($imageId, PATHINFO_FILENAME)) {
+            unlink($currentPath);
+        }
+    }
     if (file_exists($path)) {
         unlink($path);
     }

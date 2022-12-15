@@ -81,7 +81,7 @@ export default class Profile {
         }
 
         let form = new FormData();
-        form.append("imageId", this.getProfile);
+        form.append("imageId", this.getProfile());
         form.append("savePath", this.savePath);
 
         $.ajax({
@@ -154,8 +154,11 @@ export default class Profile {
                         if (result === "moved.uploaded") {   
                             this.setProfile(imageId);
                             this.updateAll();
-                            $("#change-profile").attr("value", '');
-                            $("#change-profile").change();
+
+                            let changeProfile = $("#change-profile");
+
+                            changeProfile.attr("value", '');
+                            changeProfile.change();
                         } else {
                             alert(result);
                         }
