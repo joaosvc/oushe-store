@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    height: auto;
+    width: 380px;   
+    min-height: 468px;
+    border: 1px solid var(--border-gray);
+    border-radius: 7px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 48px 40px 36px;
+    transition: all 100ms;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    padding: 24px 0px 0px;  
+}
+
+.title {
+    padding: 16px 0px 0px;
+}
+
+.subtitle {
+    padding: 7px 0 45px 1px;
+}
+
+.title, .subtitle {
+    text-align: center;
+} 
+
+.concls {
+    position: relative;
+    min-height: 30px;   
+    width: 100%;
+}
+
+.email-cls {
+    margin-bottom: 6px;
+}
+
+.concls .option {
+    width: 100%;
+}
+
+.concls .option.ref {
+    width: calc(50% - 5px);
+}
+
+.concls input {
+    position: relative;
+    width: calc(100% - 21px);
+    height: 52px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid var(--border-gray);
+    font-size: 14px;
+    padding: 0px 8px;  
+    padding-left: 15px;
+    position: relative;
+    transition: 100ms;
+}
+
+.option input:focus {
+    border: 1px solid var(--primary-color);
+    color: var(--color-black);
+}
+
+.option input::placeholder {
+    color: var(--color-light-black);
+}
+
+.concls .option:first-child {
+    float: left;
+}
+
+.concls .option:last-child {
+    float: right;
+}
+
+.concls .option:last-child {
+    margin-right: 0;
+}
+
+.concls .errno {
+    display: hidden;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 20px;
+    padding-left: 4px;
+}
+
+.concls.error .errno {
+    display: visible;
+}
+
+.errno svg {
+    visibility: hidden;
+    color: var(--input-color-error);
+    top: 2px;
+    position: relative; 
+}
+
+.concls.error svg {
+    visibility: visible;
+}
+
+.errno label {
+    color: var(--input-color-error);
+    font-size: 13px;
+}
+
+input.error, input.error:focus {
+    border: 1px solid var(--input-color-error);
+    color: var(--input-color-error);
+}
+
+input.error::placeholder {
+    color: var(--input-color-error);
+}
+
+.option-desc {
+    width: 100%;
+    margin-top: 3px;
+}
+
+.option-desc span {
+    font-size: 13px;
+    color: var(--color-light-black);
+    margin-left: 7px;
+}
+
+.concls.error .option-desc {
+    display: none;
+}
+
+.forgot-email span {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--primary-color);
+    padding-left: 4px;
+}
+
+.forgot-email span:hover {
+    cursor: pointer;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.buttons input, .buttons a {
+    background-color: transparent;
+    color: var(--primary-color); 
+    border: none;
+    outline: none;
+    font-weight: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    position: relative;
+    padding: 8px;
+    text-decoration: none;
+    transition: all 80ms;
+}
+
+.buttons a {
+    font-size: 14px;
+}
+
+.buttons input:hover, .buttons a:hover {
+    cursor: pointer;
+}
+
+.buttons a:hover {
+    color: var(--primary-color-se);
+    background-color: var(--primary-color-de);
+}
+
+.buttons input {
+    background-color: var(--primary-color);
+    color: white; 
+    float: right;
+    padding: 8px 15px;
+}
+
+.buttons input:hover {
+    background-color: var(--primary-color-se);
+}
+
+.show-password {
+    padding: 8px 0 20px;
+    margin-left: 5px;
+}
+
+.show-password input {
+    float: left;
+    position: relative;
+    padding: auto;
+    margin: auto;
+    width: 17px;
+    height: 17px;
+    border: 2px solid var(--input-checkbox-color-gray);
+    border-radius: 2px;
+}
+
+.show-password label {
+    padding-left: 17px;
+    text-align: center;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 210px;  
+    }
+}
