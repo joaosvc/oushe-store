@@ -25,9 +25,7 @@ Importação do banco de dados XAMPP
 ## Funcões
 
 No arquivo JavaScript MainPage.js, tem um exemplo de como adiciona um produto!!!
-
 por padrão criei um for que gerar varios produtos identicos...
-
 aqui está um exemplo de como criar um produto:
 
 ```bash
