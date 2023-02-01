@@ -15,7 +15,7 @@ Um projetinho simples a pedido da escola, uma loja online simples e interativa!
 
 Importação do banco de dados XAMPP
 
-```http
+```bash
   1° Crie um banco de dados chamado oushe-store e em seguida selecione-o
 ```
 ```bash
