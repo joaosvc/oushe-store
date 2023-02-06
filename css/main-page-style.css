@@ -635,6 +635,7 @@ input.error::placeholder {
     border: 1.5px solid var(--search-border-color);
     position: relative;
     display: inline-flex;
+    z-index: 1;
     align-items: center;
 }
 
