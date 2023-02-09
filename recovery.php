@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 
-    <title>Oushe - Recuperar conta</title>
+    <title>Recuperar conta</title>
 </head>
 <body>
     <div class="main" style="left: 50%; top: 50%; position: absolute; transform: translate(-50%, -50%); font-family: 'Roboto', sans-serif;">
